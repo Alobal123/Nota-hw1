@@ -1,0 +1,96 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"Ctee5jNRzKPXzHI5oOu0X0GTRFfOCMYF": {
+			"height": 90,
+			"title": "Common.relativeMove",
+			"width": 430,
+			"x": 429,
+			"y": 83
+		},
+		"Swm70xJtJvNQl9ojklr8tvQyEOY31muy": {
+			"height": 94,
+			"title": "store",
+			"width": 174,
+			"x": 444,
+			"y": -106
+		},
+		"hf0wSZ1xabVyNTWPs9tx4kdnwjwLK89D": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 249,
+			"y": 10
+		},
+		"tgt0Tp1f3NMu0ZIeJeNbINNwmXOX2GUp": {
+			"height": 94,
+			"title": "store",
+			"width": 263,
+			"x": 432,
+			"y": -11
+		}
+	},
+	"roles": [ {
+		"categories": [ "krb_sailing.BattleCommander" ],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "Swm70xJtJvNQl9ojklr8tvQyEOY31muy",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "sailingDirections"
+			}, {
+				"name": "value",
+				"value": "Wind()"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "tgt0Tp1f3NMu0ZIeJeNbINNwmXOX2GUp",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "_"
+			}, {
+				"name": "value",
+				"value": "krb_sailing.WindDebug()"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "Ctee5jNRzKPXzHI5oOu0X0GTRFfOCMYF",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "dist",
+				"value": "{x = sailingDirections[\"dirX\"], z = sailingDirections[\"dirZ\"]}"
+			}, {
+				"name": "fight",
+				"value": "false"
+			}, {
+				"name": "scriptName",
+				"value": "Common.relativeMove"
+			} ],
+			"scriptName": "Common.relativeMove"
+		} ],
+		"id": "hf0wSZ1xabVyNTWPs9tx4kdnwjwLK89D",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}
